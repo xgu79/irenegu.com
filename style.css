@@ -1,0 +1,313 @@
+/*############## Defaults ############*/
+nav,
+header,
+footer {
+    display: block; 
+}
+
+body {
+    line-height: 1em;
+    margin: 0;
+    /*assure everything in the body edge to edge*/
+}
+
+label {
+    font-size: 35px;
+    font-weight: 600; /* bolder */
+}
+
+p {
+    font-size: 28px;
+    line-height: 1.2; /* usually 1 in paragraph */
+}
+
+article p {
+    font-size: 35px;
+    padding: 20px;        
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    /* as the browser shrinks, wrap elements around underneath */
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    /* 	No floating elements allowed on either the left or the right side */
+    content: "";
+}
+
+.col-1 {width:8.33%;}
+.col-2 {width:16.66%;}
+.col-3 {width:25%;}
+.col-4 {width:33.33%;}
+.col-5 {width:41.66%;}
+.col-6 {width:50%;}
+.col-7 {width:58.33%;}
+.col-8 {width:66.66%;}
+.col-9 {width:75%;}
+.col-10 {width:83.33%;}
+.col-11 {width:91.66%;}
+.col-12 {width:100%;}
+
+* {
+    box-sizing: border-box;
+}
+
+/*############## Nav bar ##############*/
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #eee;
+    overflow: hidden;
+    /* when the browser is collapsing, everything not fit into doesn't show, no scroll */
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none; /*no bullet points*/
+    float: left;
+}
+
+ul.topnav li.topnav-right{
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    /* as the browser shrinks, the minisize of font is 16px , similar as font-size*/
+    text-align: center;
+    padding:14px;
+    /* padding surrounding the entire texts topbottomleftright */
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: white;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+
+/*
+    #id - for javascript interact
+            or single element styling
+    .class - for styling
+*/
+
+/* ############ Custom Style ############*/
+
+#section-1-gradient {
+    background: linear-gradient(#076DEF, #65a5ff);
+}
+
+div.box {
+    text-align: center;
+    margin: 24px; /* margin of div.box inside div.col-4 */
+    padding: 36px 24px 40px 24px; /* padding of its children elements inside div.box */
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+        0 2px 3px 0 rgba(0,0,0,1);
+}
+
+div.slopeIcon img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 5px 2px rgba(0,0,0,.15),
+        2px 2px 17px 2px rgba(0,0,0,1);
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    background-color: aquamarine;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+button.learnMore {
+    display: block;
+    margin: auto;
+}
+
+div.icon {
+    width: 100%;
+}
+
+.leftSide-col {
+    margin-left: 30%;
+}
+
+.rightSide-col {
+    margin-left: 15%;
+}
+
+h1.large {
+    font-size: 56px;
+    color: white;
+    margin: 0;
+    line-height: 60px;
+    /* make the lines not overlapped/line spacing expand */
+}
+
+h1.section2Header {
+    font-size: 65px;
+    text-align: center;
+}
+/* header is like a block or div itself, take a whole row, just use text-align to center in the view */
+
+form h2 {
+    color: white;
+}
+
+/* attribute selector */
+input[type="text"] {
+    font-size: 20px;
+    width: 50%;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+footer.footsy {
+    background-color: antiquewhite;
+    padding-left: 10%;
+}
+
+footer.footsy h1 {
+    color: darkcyan;
+    font-size: 35px;
+}
+
+footer.footsy ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.footsy ul li {
+    color: darkcyan;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+/*############# Mobile ########*/
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav responsive li.dropdownIcon {
+        position: absolute;
+        /*stay the same position*/
+        top:0;
+        right:0;
+        /*top right corner*/
+    }
+    
+    ul.topnav responsive {
+        position: relative;
+    }
+    
+    ul.topnav responsive li {
+        display: inline;
+        /* inline - line up in a row, grouping */
+        float: none;
+    }
+    
+    ul.topnav responsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+    h1.section2Header {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    
+    article p {
+        font-size: 25px;    
+    }
+    
+    
+    .col-7,
+    .col-5,
+    .col-6,
+    .col-4 {
+        width: 100%;
+        margin: 0;
+    }
+    /* when the browser shrink, the video takes an entire row */
+    
+    div.mobileStack {
+        width: 50%;
+        display: block;
+    }
+   
+    div.box {
+        padding: 5px;
+        display: block;
+        
+    }
+    
+    div.slopeIcon {
+        margin: 10px;
+    }
+    
+    div.slopeIcon img {
+        width: 100%;
+        /* change the image size to 100% of the div.slopeIcon, grab the child img*/
+    
+        /*padding: 10px; set the parent's margin instead, padding-border-margin*/
+    }
+    
+    div.leftSide-col,
+    div.rightSide-col {
+        margin: 15px;
+    }
+    
+    input[type="text"] {
+        width: 350px;
+    }
+    
+    /* be specific, grab the iframe */
+    .videoContainer iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+}
+
