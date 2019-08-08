@@ -1,0 +1,29 @@
+.name {
+    font-family: 'Princess Sofia', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+.container-fluid {
+    background-color: ;
+    height: 4rem;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-middle {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.nav {
+    display: block;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 25px;
+    color: darkgray;
+}
