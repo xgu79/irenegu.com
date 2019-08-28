@@ -1,29 +1,177 @@
-.name {
-    font-family: 'Princess Sofia', cursive;
-    font-size: 60px;
+/*
+font-family: 'Comfortaa', cursive;
+font-size: 15px 16px 18px 20px
+font-weight: 60
+color select:
+#e41749
+#f5587b
+#ff8a5c
+#fff591
+*/
+
+body {
+    font-family: 'Comfortaa', cursive;
+    color: #fff591;
+    font-size:15px;
+    font-weight: 60;
+    background-color: #f5587b;
+    letter-spacing: 1px;
+}
+
+hr {
+    border: 0.5px solid #e41749;
+}
+.topnav {
+    list-style-type: none;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding:inherit;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.topnav button {
+    background-color: #f5587b;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    float: none;
+    padding:10px 20px 10px 20px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #fff591;
+}
+
+.topnav button.activeTab {
+    color: #ff8a5c;
+}
+
+div.middle-container section {
+    display: none;
+}
+
+div.middle-container section.activePage {
+    display: block;
+}
+
+.page-wrapper {
+    margin: 80px 180px 50px 180px;
+    position: relative;
     text-align: center;
 }
 
-.container-fluid {
-    background-color: ;
-    height: 4rem;
+/* home page */
+#home-page img {
+    opacity: 0.8;
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.text-left {
+#caption-block {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* me page */
+#me-page img {
+    width: 23%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#me-intro {
+    margin: 100px 220px 20px 220px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+h1 {
+    font-size: 14px;
+    letter-spacing: 0.8px;
+}
+
+/* projects page */
+h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+p {
+    font-size: 17px;
+    color: floralwhite;
+    text-align: center;
+}
+#projects-list p, h5 {
+    text-align: left;
+    font-size: 15px;
+}
+#projects-list {
+    margin: 50px 50px 50px 50px;
+}
+h4 {
+    text-align: left;
+    font-size: 20px;
+}
+h5 {
+    text-align: left;
+    font-size: 17px;
+    color: floralwhite;
+}
+
+/* contact page */
+#contact-form {
+    margin:20px 70px 20px 70px; 
     text-align: left;
 }
+h3 {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
 
-.text-middle {
+form {
+    margin-left: 60px;
+}
+
+input, textarea {
+    padding:5px; 
+    border:0.5px #2D383A; 
+    border-radius: 2px;
+}
+
+input :focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#e41749; 
+    border:0 none;
+    cursor:pointer;
+    border-radius: 2px;
+    color: #fff591;
+    text-align: left;
+    letter-spacing: 1.5px;
+}
+
+#footer-block {
     text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.nav {
     display: block;
-    font-family: 'Cutive Mono', monospace;
-    font-size: 25px;
-    color: darkgray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    width: 20%;
+}
+#footer-block p {
+    color: #fff591;
+    font-size: 13px;
+    line-height: 0px;
 }

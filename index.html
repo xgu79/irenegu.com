@@ -1,34 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Princess+Sofia&display=swap" rel="stylesheet">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
         
-        <title>Welcome~to~Irene's~World~</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:300&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+        
+        
+        <title>&#x1F420</title>
         
     </head>
     <body>
-        <div class="Nav">
-            <header class="name">Irene Gu</header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="text-right nav col-lg-5">Home</div>
-                    <div class="nav text-middle col-lg-2">About</div>
-                    <div class="nav text-left col-lg-5">Contact</div>
+        <div class="top-container">
+            <nav>
+                <div class="topnav">
+                    <button class="activeTab" id='home-tab'>Home</button>
+                    <button id='me-tab'>.Me</button>
+                    <button id="projects-tab">Courses/Projects</button>
+                    <button id="contact-tab">Contact</button>
+                    <button>&#x1F420</button>
                 </div>
-            </div>
+            </nav>
+        </div>
+        <div class="middle-container">
+            <section id="home-page" class="activePage">
+                <div class="page-wrapper">
+                    <img src="home.jpg">
+                    <!--
+                    <div id="caption-block">
+                        <h1>&#x1F420</h1>
+                        <br><br><br><br><br><br>
+                        <h2>IRENE XIAOYU GU</h2>
+                    </div>
+                    -->
+                </div>
+            </section>
+            <section id="me-page">
+                <div class="page-wrapper">
+                    <div id="me-image">
+                        <img src="me.jpg">
+                    </div>
+                    <div id="me-intro">
+                    <h1>Something about me...</h1><br>
+                    My name is Irene Xiaoyu Gu. I am a 4th year Computer Science major at Georgia Institute of Technology. I work in the SocialVR project under Professor Blair MacIntyre. I am interested in the fields of UI/UX, Web Development and Computer Graphics and Media.<br>
+                    I speak English, Chinese, Japanese and elementary Korean. I also love watercolor/pencil illustrations, fashion design, and literature. 
+                    </div>
+                </div>
+            </section>
+            <section id="projects-page">
+                <div class="page-wrapper">
+                    <h2>Courses/Projects Overview</h2><br><br>
+                    <p>Here is a list of projects and courses I have done personally and academically. Continue Updating.</p>
+                    <div id="projects-list">
+                        <div class="row project">
+                            <div class="col-lg-5">
+                                <h4>Computer Graphics</h4><br>
+                                <h5>
+                                    CS3451: Java, Processing
+                                </h5>
+                            </div>
+                            <div class="col-lg-7">
+                                <p>Geometric constuctions; transformations; perception; reflection models; photorealistic; non-photorealistic, and image-based rendering; rendering software and API's; triangle-mesh processing; graphic acceleration; user-interaction, design and animation.</p>
+                            </div>
+                        </div><hr>
+                        <div class="row project">
+                            <div class="col-lg-5">
+                                <h4>Information Visualization</h4><br>
+                                <h5>CS4460: html, css, jQuery, d3</h5>
+                            </div>
+                            <div class="col-lg-7">
+                                <p>Learn the principles involved in designing effective information visualizations.
+Understand the wide variety of information visualizations and know what visualizations are appropriate for various types of data and for different goals.
+Understand how to design and implement information visualizations.
+Know how information visualizations use dynamic interaction methods to help users understand data.
+Learn to apply an understanding of human perceptual and cognitive capabilities to the design of information visualizations.
+Develop skills in critiquing different visualization techniques in the context of user goals and objectives.
+Learn how to implement compelling information visualizations.</p>
+                            </div>
+                        </div><hr>
+                        <div class="row project">
+                            <div class="col-lg-5">
+                                <h4>Intro to Robotics and Perception</h4><br>
+                                <h5>CS3630: python, numpy</h5>
+                            </div>
+                            <div class="col-lg-7">
+                                <p>Describe and explain what robots are and what they can do.
+Describe mathematically the position and orientation of an object.
+Develop a control architecture for a mobile robot system.
+Implement sensor-based navigation and localization algorithms.
+Write moderately complex Python programs to control a robotic system.</p>
+                            </div>
+                        </div><hr>
+                        <div class="row project">
+                            <div class="col-lg-5">
+                                <h4>Machine Learning for Trading</h4><br>
+                                <h5>CS4646: python, numpy, matlib, pandas</h5>
+                            </div>
+                            <div class="col-lg-7">
+                                <p>This course introduces students to the real world challenges of implementing machine learning based trading strategies including the algorithmic steps from information gathering to market orders. The focus is on how to apply probabilistic machine learning approaches to trading decisions. We consider statistical approaches like linear regression, Q-Learning, KNN and regression trees and how to apply them to actual stock trading situations.</p>
+                            </div>
+                        </div><hr>
+                        <div class="row project">
+                            <div class="col-lg-5">
+                                <h4>Computer Vision</h4><br>
+                                <h5>CS4476: </h5>
+                            </div>
+                            <div class="col-lg-7">
+                                <p>This course provides an introduction to computer vision including fundamentals of image formation, camera imaging geometry, feature detection and matching, stereo, motion estimation and tracking, image classification and scene understanding. We'll develop basic methods for applications that include finding known models in images, depth recovery from stereo, camera calibration, image stabilization, automated alignment, tracking, boundary detection, and recognition. The focus of the course is to develop the intuitions and mathematics of the methods in lecture, and then to learn about the difference between theory and practice in the projects. </p>
+                            </div>
+                        </div><hr>
+                        <div class="row project">
+                            <div class="col-lg-5">
+                                <h4>Junior Design</h4><br>
+                                <h5>/</h5>
+                            </div>
+                            <div class="col-lg-7">
+                                <p>To be updating...</p>
+                            </div>
+                        </div><hr>
+                    </div>
+                </div>
+            </section>
+            <section id="contact-page">
+                <div class="page-wrapper">
+                    <div id="contact-form" class="row">
+                        <div class="col-lg-4">
+                            <h3>Contact Me</h3><br>
+                            Please leave a message for any inquiries or questions about me.<br><br>guxy_98@outlook.com
+                        </div>
+                        <div class="col-lg-8">
+                            <form action="">
+                                Name*<br>
+                                <input type="text" name="firstname" size=30>&nbsp&nbsp&nbsp
+                                <input type="text" name="lastname" size=30>
+                                <br><br><br>
+                                Email Address*<br>
+                                <input type="email" name="email" size=65>
+                                <br><br><br>
+                                Subject*<br>
+                                <input type="text" name="subject" size=65>
+                                <br><br><br>
+                                Message*<br>
+                                <textarea rows="6" cols="64"></textarea>
+                                <br><br><br>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
         
         <footer class="footsy">
-        
+            <div id="footer-block">
+                <p>© 2019 by Irene Xiaoyu Gu</p>
+                <a href="https://github.com/xgu79?tab=repositories"><img src="GitHub-Mark-Light-32px.png" height="20px"></a>
+                <a href="https://www.linkedin.com/in/xiaoyu-gu-136800170/"><img src="LI-In-Bug.png" height="20px"></a>
+                <a href="https://www.instagram.com/guxy_y__yy/"><img src="glyph-logo_May2016.png" height="20px"></a>
+            </div>
         </footer>
-        <script>
-        
-        </script>
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
